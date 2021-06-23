@@ -121,7 +121,7 @@ After choosing an option, you can can push as normal:
 ```
 git push
 ```
-## Try using Markdown if you finish ahead of time:
+## Try using Markdown if you are familiar with Git already:
 
 In the meantime, here are some tips for using `markdown`, which is used in `readme.md` files on `GitHub`.
 
