@@ -23,9 +23,11 @@ fetch(url)
         }
 )
 
+// our feature groups
 let speakFluentEnglish = L.featureGroup();
 let speakOtherLanguage = L.featureGroup();
 
+// color options for the circleMarkers
 let exampleOptions = {
     radius: 4,
     fillColor: "#ff7800",
