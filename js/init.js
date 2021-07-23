@@ -2,16 +2,16 @@ const myMap = L.map('mapArea').setView([34.0709, -118.444], 5);
 
 const url = "https://spreadsheets.google.com/feeds/list/1upD99bKWIO68jL8MKWV67KE-_H_TVn2bCwqyQkqNsBw/oxw5dh3/public/values?alt=json"
 
-let Esri_WorldGrayCanvas = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
-	attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
-	maxZoom: 16
-});
+// let Esri_WorldGrayCanvas = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+// 	attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
+// 	maxZoom: 16
+// });
 
-Esri_WorldGrayCanvas.addTo(myMap)
+// Esri_WorldGrayCanvas.addTo(myMap)
 
-// L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-//     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-// }).addTo(myMap);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(myMap);
 
 fetch(url)
 	.then(response => {
@@ -24,8 +24,8 @@ fetch(url)
 )
 
 // our feature groups
-let speakFluentEnglish = L.featureGroup();
-let speakOtherLanguage = L.featureGroup();
+// let speakFluentEnglish = L.featureGroup();
+// let speakOtherLanguage = L.featureGroup();
 
 // color options for the circleMarkers
 let exampleOptions = {
