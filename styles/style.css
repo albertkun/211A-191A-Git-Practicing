@@ -1,0 +1,27 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-auto-rows: minmax(5px, auto); */
+    grid-template-areas: "header header" "mappanel sidebar"
+}
+
+header{
+    grid-area: header;
+    display: grid;
+}
+
+#map{
+    
+    grid-area: mappanel;
+} 
+
+#contents{
+    grid-area: sidebar;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    height:90vh;
+}
+
+#survey {
+    grid-column: 2/2;
+}
