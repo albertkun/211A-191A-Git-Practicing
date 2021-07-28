@@ -20,7 +20,7 @@ You run these in the terminal!
 [Refer to this medium post about git merges](https://medium.com/swlh/git-branching-and-merging-made-easy-f7dacd4aa75e)
 ## Testing Area
 ```md
-This is a testing message.
+This is a testing message. wawawawawawa
 ```
 ## Branches
 Branches are places where you create new features or test things and eventually you can bring them back to the main branch.
